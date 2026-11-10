@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>
+            <div class="c1">
+                <div class="b1" style="padding: 0;">
+                    <img height="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc3nLGwOZ_uKPUROt6XxM1Qq6eMhpXJvKi_1vPBymSy4oj36vorqNL0y8CGl4QTtX7hME&usqp=CAU">
+                </div>
+                <div class="b1"><a href="{{ url_for('inicio') }}">Inicio</a></div>
+                <div class="b1"><a href="{{ url_for('detalles') }}">Detalles del Producto</a></div>
+                <div class="b1"><a href="{{ url_for('contacto') }}">Contacto</a></div>
+                <div class="b1"><a href="{{ url_for('promociones') }}">Promociones</a></div>
+            </div>
+        </h1>
+        <h2>FERRETERÍA KUPICACA</h2>
+    </header>
+    <main>
+        <div style="text-align: center;">
+            <img style="border-radius: 5%;" height="250px" src="https://d100mj7v0l85u5.cloudfront.net/s3fs-public/2023-03/que-vender-en-una-ferreteria.png">
+        </div>
+        
+        <div class="c2">
+            <div class="b2">
+                <p>HERRAMIENTAS</p>
+                <ul>
+                    <li><a href="{{ url_for('detalles') }}#herramientas">Escalera</a></li>
+                    <li><a href="{{ url_for('detalles') }}#herramientas">Juego de llaves</a></li>
+                </ul>
+            </div>
+            <div class="b2">
+                <p>MATERIAL ELÉCTRICO</p>
+                <ul>
+                    <li><a href="{{ url_for('detalles') }}#me">Cable</a></li>
+                    <li><a href="{{ url_for('detalles') }}#me">Regulador de voltaje</a></li>
+                </ul>
+            </div>
+            <div class="b2">
+                <p>HOGAR Y JARDÍN</p>
+                <ul>
+                    <li><a href="{{ url_for('detalles') }}#hj">Podadora inalámbrica</a></li>
+                    <li><a href="{{ url_for('detalles') }}#hj">Tijera de poda</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="horario">
+            <div id="horar1" style="margin: 20px;">HORARIO</div>
+            <p>
+                Lunes a Viernes: 8am - 10pm <br>
+                Sábado: 9am - 10pm <br>
+                Domingo: 10am - 9pm
+            </p>
+        </div>
+    </main>
+</body>
+</html>

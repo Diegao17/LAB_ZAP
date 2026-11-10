@@ -1,0 +1,194 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(100, 199, 82);
+    font-family: 'Verdana';
+    color: aliceblue;
+}
+
+.c1{
+    height: 60px;
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    text-decoration: none;
+    background-color: rgb(54, 113, 43);
+    color: rgb(255, 255, 255);
+    text-align: right;
+    font-size: 20px;
+}
+
+ .b1{
+    display: flex;
+    padding: 10px 10px 10x 10px;
+    width: fit-content;
+    padding: 20px;
+    float: right;
+}
+
+.b1 img{
+    border-radius: 5%;
+}
+
+h2{
+    height: 70px;
+    font-size: 40px;
+    padding: 0;    /*0 parte inferior y superior, 35 izquierda y derecha */
+    text-align: center;
+}
+
+.secc{
+    color: #0c4609;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    background-color: #ceeecc;
+}
+
+.c1 a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.contenedor{
+    background-color: #ceeecc;
+    display: flex;
+}
+  
+.bloque{
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    flex: 1;
+    padding: 0;    /*arriba, abajo, derecha, izquierda*/
+    margin: 30px 10px 30px 10px;
+    border-top: 2px solid #0c4609; 
+    border-right: 2px solid #0c4609;
+    border-bottom: 2px solid #0c4609;
+    border-left: 2px solid #0c4609;
+    background-color: #0c4609;
+  }
+
+.bloque p{
+    padding: 15px;
+    color: white;
+}
+
+.nombreprod{
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #0c4609;
+    font-size: 20px;
+    background-color: white;
+    padding: 10px;
+}
+
+.c2{
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.b2{
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(100, 199, 82);
+    border-radius: 10%;
+
+    color: aliceblue;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid #0c4609;
+}
+
+.b2 a{
+    color: inherit;
+}
+
+#horario{
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #0c4609;
+}
+
+#horario p{
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#horar1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    color: aliceblue;
+}
+
+.c3{
+    padding: 30px;
+    background-color: #0c4609;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+.b3{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(100, 199, 82);
+    border-radius: 10%;
+
+    width: 500px;
+    height: 400px;
+
+    color: aliceblue;
+    text-align: justify;
+    font-size: 26px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid #0c4609;
+
+    border: 2px solid black;
+}
+
+.dia{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+.b3 p{
+    text-align: center;
+}
+
+.formu{
+    margin-left: 50px;
+    border: 2px solid black;
+    padding: 30px;
+    color: #0c4609;
+    border-radius: 5%;
+    background-color: #ceeecc;
+
+    width: 600px;
+
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#mensaje{
+    width: 300px;
+    height: 200px;
+}

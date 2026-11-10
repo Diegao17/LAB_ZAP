@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>
+            <div class="c1">
+                <div class="b1" style="padding: 0;">
+                    <img height="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc3nLGwOZ_uKPUROt6XxM1Qq6eMhpXJvKi_1vPBymSy4oj36vorqNL0y8CGl4QTtX7hME&usqp=CAU">
+                </div>
+                <div class="b1"><a href="{{ url_for('inicio') }}">Inicio</a></div>
+                <div class="b1"><a href="{{ url_for('detalles') }}">Detalles del Producto</a></div>
+                <div class="b1"><a href="{{ url_for('contacto') }}">Contacto</a></div>
+                <div class="b1"><a href="{{ url_for('promociones') }}">Promociones</a></div>
+            </div>
+        </h1>
+        <h2>CONTÁCTANOS</h2>
+    </header>
+
+    <main>
+        <div class="formu">
+
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="alert alert-success">
+                    {% for m in messages %}
+                        <p>{{ m }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            {% endwith %}
+
+            <form method="post" action="{{ url_for('contacto') }}">
+                <label for="asunto">Asunto: </label>
+                <select name="asunto" id="asunto">
+                    <option value="Felicitación">Felicitación</option>
+                    <option value="Comentario">Comentario</option>
+                    <option value="Soporte técnico">Soporte técnico</option>
+                    <option value="Solicitar información">Solicitar información</option>
+                    <option value="Queja">Queja</option>
+                </select>
+
+                <br><br>
+
+                <label>Nombre:</label> 
+                <input type="text" name="nombre" required>
+
+                <br><br>
+
+                <label>Correo electrónico:</label>
+                <input type="email" name="correo" required>
+
+                <br><br>
+
+                <label>Teléfono:</label>
+                <input type="tel" name="telefono" required>
+
+                <br><br>
+
+                <label>Mensaje:</label>
+                <br>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de Productos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>
+            <div class="c1">
+                <div class="b1" style="padding: 0;">
+                    <img height="60px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc3nLGwOZ_uKPUROt6XxM1Qq6eMhpXJvKi_1vPBymSy4oj36vorqNL0y8CGl4QTtX7hME&usqp=CAU">
+                </div>
+                <div class="b1"><a href="{{ url_for('inicio') }}">Inicio</a></div>
+                <div class="b1"><a href="{{ url_for('detalles') }}">Detalles del Producto</a></div>
+                <div class="b1"><a href="{{ url_for('contacto') }}">Contacto</a></div>
+                <div class="b1"><a href="{{ url_for('promociones') }}">Promociones</a></div>
+            </div>
+        </h1>
+        <h2>FERRETERÍA KUPICACA</h2>
+    </header>
+
+    <div id="herramientas" class="secc" style="margin-top: 10px;">HERRAMIENTAS</div>
+    <div class="contenedor">
+        <div class="bloque">
+            <div class="nombreprod">
+                ESCALERA CROSS STEP 2 EN 1 DE FIBRA DE VIDRIO
+                <br>
+                <img height="300px" src="https://cdn.homedepot.com.mx/productos/126280/126280-d.jpg">
+            </div>
+            <p>
+                Escalera Cross Step 2 en 1 de 161 cm de altura con
+                5 peldaños, está fabricada de fibra de vidrio color 
+                negro con acabado mate. Incluye bota/tacón profesional 
+                antiderrapante, uso seguro con electricidad, modalidad 
+                recta o tijera; puede usarse en esquinas, postes y superficies 
+                planas, cuenta con un sistema de absorción de impactos Shox, su 
+                diseño le permite colocarse 15 cm más cerca al área de trabajo 
+                cuando está en modo tijera. Las dimensiones son 161 x 57 x 97 
+                con un peso de 7.9 kg.
+                <br><br>
+                COSTO: 1600 MXN <br>
+                TAMAÑO: 2 m <br>
+                DISPONIBLES: 5
+            </p>
+        </div>
+        <div class="bloque">
+            <div class="nombreprod">
+                JUEGO DE LLAVES EN L TORX
+                <br>
+                <img height="300px" src="https://cdn.homedepot.com.mx/productos/149797/149797-d.jpg">
+            </div>
+            <p>
+                Este conjunto de teclas TORX de Husky cubre 9 de los tamaños de 
+                sujetadores TORX más comúnmente encontrados. Cada tecla cuenta con 
+                un brazo largo magnético que funciona con sujetadores TORX estándar 
+                y un brazo corto que funciona con sujetadores TORX a prueba de manipulaciones. 
+                Tratadas térmicamente y formadas de acero para herramientas S2, estas teclas 
+                son lo suficientemente duraderas como para soportar toda una vida útil.
+                <br><br>
+                COSTO: 400 MXN <br>
+                TAMAÑO: 30 cm <br>
+                DISPONIBLES: 27
+            </p>
+        </div>
+    </div>
+
+    <br>
+
+    <div id="me" class="secc">MATERIAL ELÉCTRICO</div>
+    <div class="contenedor">
+        <div class="bloque">
+            <div class="nombreprod">
+                CABLE THWLS/THHW-LS CALIBRE 12
+                <br>
+                <img height="300px" src="https://cdn.homedepot.com.mx/productos/127341/127341-d.jpg">
+            </div>
+            <p>
+                Cable THWLS/THHW-LS Indiana, útil en la instalación de circuitos que demandan 
+                mayor energía debido a que soporta corrientes eléctricas de 600 volts. Está 
+                hecho con cordón de cobre calibre 12 con revestimiento de PVC blanco que evita 
+                descargas o cortocircuitos. Tolera temperaturas extremas de 75 a 90 grados Celsius 
+                por lo que se puede usar en instalaciones residenciales y comerciales. Su propiedad 
+                deslizable permite introducirlo de manera sencilla en conductos sin necesidad de usar 
+                herramientas. Su presentación es de 100 m e incluye carrete para evitar enredos.
+                <br><br>
+                COSTO: 900 MXN <br>
+                TAMAÑO: 10 m <br>
+                DISPONIBLES: 18
+            </p>
+        </div>
+        <div class="bloque">
+            <div class="nombreprod">
+                REGULADOR DE VOLTAJE 2000W
+                <br>
+                <img height="300px" src="https://cdn.homedepot.com.mx/productos/260149/260149-d.jpg">
+            </div>
+            <p>
+                Regulador de voltaje Koblenz de 2000 watts. Incluye seis contactos regulados para conectar 
+                dispositivos electrónicos e indicadores LED de encendido y desconexión, fabricado en metal 
+                para uso rudo. Es útil para proteger equipos de audio y video, así como aparatos de alto 
+                consumo energético que requieran regular el voltaje y desconectar en caso de salir del 
+                rango de regulación (95 - 145 V).
+                <br><br>
+                COSTO: 1019 MXN <br>
+                TAMAÑO: 10 cm x 20 cm x 15 cm <br>
+                DISPONIBLES: 10
+            </p>
+        </div>
+    </div>
+
+    <br>
+
+    <div id="hj" class="secc">HOGAR Y JARDÍN</div>
+    <div class="contenedor">
+        <div class="bloque">
+            <div class="nombreprod">
+                PODADORA DE CÉSPED INALÁMBRICA 18 VOLTS
+                <br>
+                <img height="300px" src="https://cdn.homedepot.com.mx/productos/140549/140549-d.jpg">
+            </div>
+            <p>
+                Podadora de césped inalámbrica Ryobi, su motor funciona con una batería de litio de 18 
+                volts de potencia de gran rendimiento por carga. Hace cortes de 33 cm de diámetro con 
+                su cuchilla, con 5 alturas ajustables desde los 2.5 a 7.2 cm. Su estructura está 
+                construida en plástico y acero para hacerla durable, así como ligera. Cuenta con 
+                llantas que permiten utilizarla con comodidad y manillar plegable que facilita su 
+                almacenamiento. Sus medidas son 93.98 x 35.56 x 139.7 cm. El empaque incluye batería 
+                de 4.0 Ah y cargador rápido.
+                <br><br>
+                COSTO: 19000 MXN <br>
+                TAMAÑO: 1.5 m <br>
+                DISPONIBLES: 3
+            </p>
+        </div>
+        <div class="bloque">
+            <div class="nombreprod">
+                TIJERA DE PODA
+                <br>
+                <img height="300px" src="https://www.truper.com/media/product/a13/tijera-forjada-para-poda-8-para-jardineria-truper-877.jpg">
+            </div>
+            <p>
+                Podadora tipo contrahoja de alto par de fuerzas, 
+                para podar las ramas altas del jardín o huertos. 
+                Pode ramas y madera muerta, cuchilla de acero 
+                forjado reemplazable. Mangos de aluminio livianos 
+                y reemplazables con agarres antideslizantes. 
+                Sistema de absorción de impactos con parachoques reemplazables.
+                <br><br>
+                COSTO: 1600 MXN <br>
+                TAMAÑO: 30 cm <br>
+                DISPONIBLES: 35
+            </p>
+        </div>
+    </div>
+</body>
+</html>
